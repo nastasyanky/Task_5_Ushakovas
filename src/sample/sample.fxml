@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="button_evil" layoutX="140.0" layoutY="174.0" mnemonicParsing="false" onAction="#evil_click" prefHeight="25.0" prefWidth="60.0" text="Грусть" />
+            <Button fx:id="button_good" layoutX="4.0" layoutY="174.0" mnemonicParsing="false" onAction="#good_click" text="Счастье" />
+            <AnchorPane fx:id="pane_canva" prefHeight="149.0" prefWidth="200.0">
+               <children>
+                  <Canvas fx:id="canva" height="163.0" layoutX="30.0" width="140.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="button_clean" layoutX="68.0" layoutY="174.0" mnemonicParsing="false" onAction="#clean_click" prefHeight="25.0" prefWidth="68.0" text="Очистка" />
+         </children></AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
